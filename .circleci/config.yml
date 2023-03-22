@@ -1,0 +1,14 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/base:stable
+    resource_class: nanophate/circleci-runner
+    steps:
+      - checkout
+      - run: echo "hello wowaaaawaaa"
+      - run:
+          name: Check CircleCI Files
+          command:  ls -la /home/circleci/
+          when: always
+# VS Code Extension Version: 1.2.1
