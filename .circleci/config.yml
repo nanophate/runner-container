@@ -6,7 +6,7 @@ jobs:
     resource_class: nanophate/circleci-runner
     steps:
       - checkout
-      - run: echo "hello wowaaaawaaa"
+      - run: echo "hello wowaaaawsssssaaa"
       - run:
           name: Check CircleCI Files
           command:  ls -la /home/circleci/
