@@ -1,14 +1,12 @@
 version: 2.1
+workflows:
+  testing:
+    jobs:
+      - runner-test
 jobs:
-  build:
-    docker:
-      - image: cimg/base:stable
-    resource_class: nanophate/220713-cci0macbook
+  runner-test:
+    machine: true
+    resource_class: nanophate/vm-gcp-1
     steps:
-      - checkout
-      - run: echo "hello a"
-      - run:
-          name: Check CircleCI Files
-          command:  ls -la /home/circleci/
-          when: always
-# VS Code Extension Version: 1.2.1
+      - run: echo "Hi I'm on Runners!"
+      - run: sleep 500
