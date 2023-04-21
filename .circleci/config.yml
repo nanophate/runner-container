@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
-    resource_class: nanophate/circleci-runner
+    resource_class: nanophate/220713-cci0macbook
     steps:
       - checkout
       - run: echo "hello a"
