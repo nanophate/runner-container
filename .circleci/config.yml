@@ -8,5 +8,5 @@ jobs:
     machine: true
     resource_class: nanophate/vm-gcp-1
     steps:
-      - run: echo "Hi I'm on Runners!"
+      - run: echo "Hi I'm on Runners! second trigger"
       - run: sleep 500
