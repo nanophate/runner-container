@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     resource_class: nanophate/circleci-runner
+    parallelism: 10
     steps:
       - checkout
       - run: echo "hello a"
