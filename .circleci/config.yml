@@ -41,7 +41,6 @@ workflows:
   workflow:
     jobs:
       - build
-      - build-1
       - build-2
       - build-3
 # VS Code Extension Version: 1.2.1
