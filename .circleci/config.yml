@@ -6,7 +6,8 @@ workflows:
 jobs:
   runner-test:
     machine: true
-    resource_class: nanophate/220713-cci0macbook
+    resource_class: nanophate/vm-gcp-1
+    parallelism: 4
     steps:
       - run: echo "Hi I'm on Runners! second triggeraaa"
       - run: sleep 500
