@@ -10,4 +10,3 @@ jobs:
     parallelism: 4
     steps:
       - run: echo "Hi I'm on Runners! second triggeraaa"
-      - run: sleep 500
