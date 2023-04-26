@@ -3,8 +3,22 @@ workflows:
   testing:
     jobs:
       - runner-test
+      - runner-test-2
+      - runner-test-3
 jobs:
   runner-test:
+    machine: true
+    resource_class: nanophate/vm-gcp-1
+    parallelism: 4
+    steps:
+      - run: echo "Hi I'm on Runners! second triggeraaa"
+  runner-test-2:
+    machine: true
+    resource_class: nanophate/vm-gcp-1
+    parallelism: 4
+    steps:
+      - run: echo "Hi I'm on Runners! second triggeraaa"
+  runner-test-3:
     machine: true
     resource_class: nanophate/vm-gcp-1
     parallelism: 4
