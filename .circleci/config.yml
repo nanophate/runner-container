@@ -8,30 +8,7 @@ jobs:
     steps:
       - checkout
       - run: echo "hello a"
-      - run:
-          name: Check CircleCI Files
-          command:  ls -la /home/circleci/
-          when: always
-  build-2:
-    docker:
-      - image: cimg/base:stable
-    resource_class: nanophate/circleci-runner
-    parallelism: 3 
-    steps:
-      - checkout
-      - run: echo "hello a"
-      - run:
-          name: Check CircleCI Files
-          command:  ls -la /home/circleci/
-          when: always
-  build-3:
-    docker:
-      - image: cimg/base:stable
-    resource_class: nanophate/circleci-runner
-    parallelism: 3 
-    steps:
-      - checkout
-      - run: echo "hello a"
+      - run: sleep 500
       - run:
           name: Check CircleCI Files
           command:  ls -la /home/circleci/
@@ -41,6 +18,4 @@ workflows:
   workflow:
     jobs:
       - build
-      - build-2
-      - build-3
 # VS Code Extension Version: 1.2.1
