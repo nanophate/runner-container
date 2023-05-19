@@ -7,7 +7,7 @@ jobs:
     parallelism: 3 
     steps:
       - checkout
-      - run: echo "hello a"
+      - run: echo "hello naa"
       - run: sleep 500
       - run:
           name: Check CircleCI Files
