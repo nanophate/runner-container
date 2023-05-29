@@ -3,8 +3,8 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
+      - image: cimg/postgres:15.3.0
     resource_class: nanophate/circleci-runner
-    parallelism: 3 
     steps:
       - checkout
       - run: echo "hello naa"
