@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
-      - image: cimg/postgres:15.3.0
+      - image: cimg/postgres:15.3
     resource_class: nanophate/circleci-runner
     steps:
       - checkout
