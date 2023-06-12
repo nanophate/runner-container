@@ -1,6 +1,7 @@
 version: 2.1
 jobs:
   build:
+    machine: true
     resource_class: nanophate/220713-cci0macbook
     steps:
       - checkout
