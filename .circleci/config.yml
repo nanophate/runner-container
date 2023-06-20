@@ -1,8 +1,11 @@
 version: 2.1
 jobs:
   build:
-    machine: true
-    resource_class: nanophate/220713-cci0macbook
+    docker:
+      - image: cimg/base:stable
+      # - image: cimg/postgres:15.3
+      # - image: cimg/redis:6.2.6
+    resource_class: nanophate/circleci-runner
     steps:
       - checkout
       - run: echo "hello naa"
